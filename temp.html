@@ -22,7 +22,7 @@
             var xmlhttp = new XMLHttpRequest();
             if (localStorage.streamid === undefined) {
                 xmlhttp.open("POST", URI + "/v1/streams", false);
-                xmlhttp.setRequestHeader("Authorization", "abc:123");
+                xmlhttp.setRequestHeader("Authorization", "1selfnoise:12345678");
                 xmlhttp.send();
                 var response = JSON.parse(xmlhttp.response);
                 localStorage.streamid = response.streamid;
